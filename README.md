@@ -10,9 +10,9 @@
 This is the reference implementation of **As-Plausible-As-Possible: Plausibility-Aware Mesh Deformation Using 2D Diffusion Priors (CVPR 2024)**.
 
 ## UPDATES
-- [x] Release the data.
-- [x] Release the code for mesh deformation.
-- [] Release the script for LoRA fine-tuning.
+[x] Release the data.  
+[x] Release the code for mesh deformation.  
+[] Release the script for LoRA fine-tuning.  
 
 ## Get Started
 
