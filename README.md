@@ -3,15 +3,15 @@
 
 [Project Page](https://as-plausible-as-possible.github.io) | [Paper](https://as-plausible-as-possible.github.io/static/APAP.pdf) | [arXiv](https://arxiv.org/abs/2311.16739)
 
-[Seungwoo Yoo*<sup>1</sup>](https://dvelopery0115.github.io), [Kunho Kim*<sup>1</sup>](https://soulmates2.github.io), [Vladimir G. Kim<sup>2</sup>](http://www.vovakim.com), [Minhyuk Sung<sup>1</sup>](https://mhsung.github.io) (* co-first authors)
+[Seungwoo Yoo*](https://dvelopery0115.github.io)<sup>1</sup>, [Kunho Kim*](https://soulmates2.github.io)<sup>1</sup>, [Vladimir G. Kim](http://www.vovakim.com)<sup>2</sup>, [Minhyuk Sung](https://mhsung.github.io)<sup>1</sup> (* co-first authors)
 
-[<sup>1</sup>KAIST](https://www.kaist.ac.kr/en/), [<sup>2</sup>Adobe Research](https://research.adobe.com)
+<sup>1</sup>[KAIST](https://www.kaist.ac.kr/en/), <sup>2</sup>[Adobe Research](https://research.adobe.com)
 
 This is the reference implementation of **As-Plausible-As-Possible: Plausibility-Aware Mesh Deformation Using 2D Diffusion Priors (CVPR 2024)**.
 
 ## UPDATES
 - [x] Release the data.
-- [] Release the code for mesh deformation.
+- [x] Release the code for mesh deformation.
 - [] Release the script for LoRA fine-tuning.
 
 ## Get Started
