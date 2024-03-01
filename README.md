@@ -23,6 +23,7 @@ cd APAP
 conda create --name apap python=3.9
 conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
 conda install pytorch-sparse -c pyg
+pip install wandb
 pip install diffusers==0.20.0
 pip install accelerate transformers ninja
 pip install cholespy libigl
