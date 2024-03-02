@@ -104,7 +104,7 @@ Please consider citing our work if you find this codebase useful:
 ```
 @inproceedings{yoo2024apap,
   title = {{As-Plausible-As-Possible: Plausibility-Aware Mesh Deformation Using 2D Diffusion Priors}},
-  author = {Yoo*, Seungwoo and Kim*, Kunho and Kim, Vladimir G. and Sung, Minhyuk},
+  author = {Yoo, Seungwoo and Kim, Kunho and Kim, Vladimir G. and Sung, Minhyuk},
   booktitle = {CVPR},
   year = {2024},
 }
