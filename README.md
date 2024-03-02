@@ -9,11 +9,6 @@
 
 This is the reference implementation of **As-Plausible-As-Possible: Plausibility-Aware Mesh Deformation Using 2D Diffusion Priors (CVPR 2024)**.
 
-## UPDATES
-- [x] Release the data.  
-- [x] Release the code for mesh deformation.  
-- [] Release the script for LoRA fine-tuning.  
-
 ## Get Started
 
 Clone the repository and create a Python environment:
@@ -24,7 +19,7 @@ conda create --name apap python=3.9
 conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
 conda install pytorch-sparse -c pyg
 pip install wandb
-pip install diffusers==0.20.0
+pip install diffusers==0.19.0
 pip install accelerate transformers ninja
 pip install cholespy libigl
 pip install imageio[ffmpeg] jaxtyping tyro
@@ -56,7 +51,7 @@ APAP
 └── README.md
 ````
 
-## Running Experiments
+## Making Deformations using APAP-Bench
 
 To run 3D mesh deformation experiments using *APAP-Bench (3D)*, run:
 ```
@@ -74,6 +69,35 @@ python scripts/exp/batch/batch_deform_meshes.py \
 --out-root outputs/apap-2d
 --gpu-ids 0
 ```
+
+## Fine-tuning Stable Diffusion using LoRA
+
+We directly adapt the training script from [diffusers](https://github.com/huggingface/diffusers) without modification.
+For convenience, we provide a batch script that allows users to train multiple LoRAs in parallel. To run the script, simply execute:
+```
+python scripts/lora/batch_train_dreambooth_lora.py \
+--data-list-path configs/lora_train/apap_3d.txt \
+--exp-group-name apap-3d-lora \
+--out-root outputs/lora_ckpts/apap-3d \
+--gpu-ids 0
+```
+This will produce LoRA checkpoints, each fine-tuned to the renderings of meshes in APAP-Bench 3D.
+Note that each row of a training config file consists of two items - `object_name` and `data_dir`. The `object_name` is used to automatically populate a text prompt used during fine-tuning and the `data_dir` is a directory containing images for fine-tuning.  
+After training, the outputs of each run is arranged into a directory structure as follows:
+```
+{out-root}
+├── object_name1
+│   ├── 0000  # Identifier for image dataset 
+│   └── ...
+├── object_name2
+│   ├── 0000  # Identifier for image dataset 
+│   └── ...
+├── object_name3
+│   ├── 0000  # Identifier for image dataset 
+│   └── ...
+└── ...
+```
+The checkpoint directories can be passed to the script `deform_meshes.py` via the command-line argument `--lora-dir`.
 
 ## Citation
 Please consider citing our work if you find this codebase useful:
