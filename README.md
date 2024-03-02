@@ -72,7 +72,7 @@ python scripts/exp/batch/batch_deform_meshes.py \
 
 ## Fine-tuning Stable Diffusion using LoRA
 
-We directly adapt the training script from [diffusers](https://github.com/huggingface/diffusers) without modification.
+We directly adapt [Dreambooth training script](https://github.com/huggingface/diffusers/blob/v0.19.0-release/examples/dreambooth/train_dreambooth_lora.py) from [diffusers](https://github.com/huggingface/diffusers) without modification.
 For convenience, we provide a batch script that allows users to train multiple LoRAs in parallel. To run the script, simply execute:
 ```
 python scripts/lora/batch_train_dreambooth_lora.py \
