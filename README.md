@@ -83,7 +83,7 @@ python scripts/lora/batch_train_dreambooth_lora.py \
 ```
 This will produce LoRA checkpoints, each fine-tuned to the renderings of meshes in APAP-Bench 3D.
 Note that each row of a training config file consists of two items - `object_name` and `data_dir`. The `object_name` is used to automatically populate a text prompt used during fine-tuning and the `data_dir` is a directory containing images for fine-tuning.  
-After training, the outputs of each run is arranged into a directory structure as follows:
+After training, the outputs are arranged into a directory structure as follows:
 ```
 {out-root}
 ├── object_name1
