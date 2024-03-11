@@ -1,0 +1,8 @@
+high heeled shoes, data/sd-xl-meshes/v5_rearrange/a_high_heeled_shoes_0000/lora_train_imgs/0000
+airplane, data/sd-xl-meshes/v5_rearrange/an_airplane_0000/lora_train_imgs/0000
+airplane, data/sd-xl-meshes/v5_rearrange/an_airplane_0001/lora_train_imgs/0000
+backpack, data/sd-xl-meshes/v5_rearrange/a_backpack_0000/lora_train_imgs/0000
+purse, data/sd-xl-meshes/v5_rearrange/a_purse_0000/lora_train_imgs/0000
+runway model, data/sd-xl-meshes/v5_rearrange/a_runway_model_0000/lora_train_imgs/0000
+runway model, data/sd-xl-meshes/v5_rearrange/a_runway_model_0001/lora_train_imgs/0000
+sneakers, data/sd-xl-meshes/v5_rearrange/a_sneakers_0001/lora_train_imgs/0000
